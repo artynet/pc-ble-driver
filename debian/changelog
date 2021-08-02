@@ -1,0 +1,5 @@
+nrf-ble-driver (4.1.4-1) unstable; urgency=low
+
+  * Initial DEB release.
+
+ -- Arturo Rinaldi <arturo@smartme.io>  Mon, 02 Aug 2021 14:03:23 +0000

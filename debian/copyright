@@ -1,0 +1,1232 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pc-ble
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     include/common/adapter.h
+           include/common/config/platform.h
+           include/common/internal/adapter_internal.h
+           include/common/internal/ble_common.h
+           include/common/internal/log.h
+           include/common/internal/transport/h5.h
+           include/common/internal/transport/h5_transport.h
+           include/common/internal/transport/h5_transport_exit_criterias.h
+           include/common/internal/transport/serialization_transport.h
+           include/common/internal/transport/slip.h
+           include/common/internal/transport/transport.h
+           include/common/internal/transport/uart_settings.h
+           include/common/internal/transport/uart_settings_boost.h
+           include/common/internal/transport/uart_transport.h
+           include/common/sd_rpc_types.h
+           include/common/sdk_compat/compiler_abstraction.h
+           include/common/sdk_compat/nrf.h
+           include/common/sdk_compat/nrf_svc.h
+           src/common/adapter_internal.cpp
+           src/common/ble_common.cpp
+           src/common/platform/linux/serial_port_enum.cpp
+           src/common/platform/win/jlinkid_reg_lookup.cpp
+           src/common/platform/win/jlinkid_reg_lookup.h
+           src/common/platform/win/stdafx.h
+           src/common/platform/win/stdstring.h
+           src/common/sd_rpc_impl.cpp
+           src/common/transport/h5.cpp
+           src/common/transport/serialization_transport.cpp
+           src/common/transport/slip.cpp
+           src/common/transport/transport.cpp
+           src/common/transport/uart_settings.cpp
+           src/common/transport/uart_settings_boost.cpp
+           src/common/transport/uart_transport.cpp
+           src/sd_api_v2/ble_gap_impl.cpp
+           src/sd_api_v2/ble_gattc_impl.cpp
+           src/sd_api_v2/ble_gatts_impl.cpp
+           src/sd_api_v2/ble_impl.cpp
+           src/sd_api_v2/sdk/components/libraries/util/app_util.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/common/conn_systemreset_app.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/common/conn_systemreset_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/app_ble_user_mem.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/app_ble_user_mem.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_enable.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_event.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_evt_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_evt_tx_complete.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_evt_user_mem_release.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_evt_user_mem_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_address_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_address_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_adv_data_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_adv_start.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_adv_stop.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_appearance_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_appearance_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_auth_key_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_authenticate.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_conn_param_update.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_conn_sec_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_connect.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_connect_cancel.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_device_name_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_device_name_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_disconnect.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_encrypt.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_adv_report.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_auth_key_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_auth_status.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_conn_param_update.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_conn_param_update_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_conn_sec_update.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_connected.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_disconnected.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_key_pressed.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_lesc_dhkey_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_passkey_display.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_rssi_changed.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_scan_req_report.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_sec_info_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_sec_params_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_sec_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_evt_timeout.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_keypress_notify.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_lesc_dhkey_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_lesc_oob_data_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_lesc_oob_data_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_ppcp_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_ppcp_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_rssi_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_rssi_start.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_rssi_stop.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_scan_start.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_scan_stop.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_sec_info_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_sec_params_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gap_tx_power_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_attr_info_discover.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_char_value_by_uuid_read.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_char_values_read.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_characteristics_discover.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_descriptors_discover.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_attr_info_disc_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_char_disc_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_char_val_by_uuid_read_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_char_vals_read_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_desc_disc_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_hvx.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_prim_srvc_disc_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_read_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_rel_disc_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_timeout.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_evt_write_rsp.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_hv_confirm.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_primary_services_discover.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_read.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_relationships_discover.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gattc_write.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_attr_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_characteristic_add.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_descriptor_add.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_hvc.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_rw_authorize_request.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_sc_confirm.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_sys_attr_missing.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_timeout.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_evt_write.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_hvx.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_include_add.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_initial_user_handle_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_rw_authorize_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_service_add.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_service_changed.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_sys_attr_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_sys_attr_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_value_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_gatts_value_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_cid_register.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_cid_unregister.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_evt_app.h
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_evt_rx.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_l2cap_tx.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_opt_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_opt_set.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_tx_packet_count_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_user_mem_reply.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_uuid_decode.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_uuid_encode.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_uuid_vs_add.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/ble_version_get.c
+           src/sd_api_v2/sdk/components/serialization/application/codecs/s130/serializers/nrf_soc_app.h
+           src/sd_api_v2/sdk/components/serialization/common/ble_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/ble_serialization.h
+           src/sd_api_v2/sdk/components/serialization/common/cond_field_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/cond_field_serialization.h
+           src/sd_api_v2/sdk/components/serialization/common/ser_config.h
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gap_struct_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gap_struct_serialization.h
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gattc_struct_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gattc_struct_serialization.h
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gatts_struct_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_gatts_struct_serialization.h
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_struct_serialization.c
+           src/sd_api_v2/sdk/components/serialization/common/struct_ser/s130/ble_struct_serialization.h
+           src/sd_api_v3/ble_gattc_impl.cpp
+           src/sd_api_v3/ble_gatts_impl.cpp
+           src/sd_api_v3/ble_impl.cpp
+           src/sd_api_v5/ble_gap_impl.cpp
+           src/sd_api_v5/ble_gattc_impl.cpp
+           src/sd_api_v5/ble_gatts_impl.cpp
+           src/sd_api_v5/ble_impl.cpp
+           src/sd_api_v6/ble_gattc_impl.cpp
+           src/sd_api_v6/ble_gatts_impl.cpp
+           src/sd_api_v6/ble_impl.cpp
+           test/softdevice_api/testcase_issue_128bit_uuid.cpp
+           test/softdevice_api/testcase_issue_gh_112.cpp
+           test/util/include/test_environment.h
+           tools/svcall_convert.py
+Copyright: 2016-2019 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     examples/heart_rate_monitor/main.c
+           hex/sd_api_v5/s132_nrf52_5.1.0_license-agreement.txt
+           hex/sd_api_v6/s132_nrf52_6.1.1_licence-agreement.txt
+           hex/sd_api_v6/s140_nrf52_6.1.1_licence-agreement.txt
+           include/common/internal/app_ble_gap.h
+           include/sd_api_v5/ble.h
+           include/sd_api_v5/ble_err.h
+           include/sd_api_v5/ble_gap.h
+           include/sd_api_v5/ble_gatt.h
+           include/sd_api_v5/ble_gattc.h
+           include/sd_api_v5/ble_gatts.h
+           include/sd_api_v5/ble_hci.h
+           include/sd_api_v5/ble_l2cap.h
+           include/sd_api_v5/ble_ranges.h
+           include/sd_api_v5/ble_types.h
+           include/sd_api_v5/nrf_error.h
+           include/sd_api_v6/ble.h
+           include/sd_api_v6/ble_err.h
+           include/sd_api_v6/ble_gap.h
+           include/sd_api_v6/ble_gatt.h
+           include/sd_api_v6/ble_gattc.h
+           include/sd_api_v6/ble_gatts.h
+           include/sd_api_v6/ble_hci.h
+           include/sd_api_v6/ble_l2cap.h
+           include/sd_api_v6/ble_ranges.h
+           include/sd_api_v6/ble_types.h
+           include/sd_api_v6/nrf_error.h
+           src/common/app_ble_gap.cpp
+           src/sd_api_common/sdk/components/libraries/util/app_util.h
+           src/sd_api_common/sdk/components/serialization/common/ble_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/ble_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/cond_field_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/cond_field_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/ser_config.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gap_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gap_struct_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gatt_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gatt_struct_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gattc_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gattc_struct_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gatts_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_gatts_struct_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_l2cap_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_l2cap_struct_serialization.h
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_struct_serialization.c
+           src/sd_api_common/sdk/components/serialization/common/struct_ser/ble/ble_struct_serialization.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/common/conn_systemreset_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/app_ble_user_mem.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/app_ble_user_mem.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_event.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_evt_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_evt_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_evt_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_evt_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_evt_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_evt_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_evt_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_evt_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_evt_app.c
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_evt_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/ble/serializers/nrf_soc_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/common/conn_systemreset_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/app_ble_user_mem.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/app_ble_user_mem.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_event.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_evt_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_evt_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_evt_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gap_evt_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_evt_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gattc_evt_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_evt_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_gatts_evt_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_evt_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/ble_l2cap_evt_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/ble/serializers/nrf_soc_app.h
+           src/sd_api_v6/sdk/components/serialization/application/codecs/common/conn_systemreset_app.c
+           src/sd_api_v6/sdk/components/serialization/application/codecs/common/conn_systemreset_app.h
+Copyright: 2007-2018 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form, except as embedded into a Nordic
+ Semiconductor ASA integrated circuit in a product or a software update for
+ such product, must reproduce the above copyright notice, this list of
+ conditions and the following disclaimer in the documentation and/or other
+ materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of its
+ contributors may be used to endorse or promote products derived from this
+ software without specific prior written permission.
+ .
+ 4. This software, with or without modification, must only be used with a
+ Nordic Semiconductor ASA integrated circuit.
+ .
+ 5. Any software provided in binary form under this license must not be reverse
+ engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL NORDIC SEMICONDUCTOR ASA OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     .clang-format
+           .clang-tidy
+           .github/ISSUE_TEMPLATE.md
+           .gitignore
+           CMakeLists.txt
+           Installation.md
+           Issues.md
+           README.md
+           cmake/apple.cmake
+           cmake/clang-dev-tools.cmake
+           cmake/clang.cmake
+           cmake/gcc.cmake
+           cmake/install-target.cmake
+           cmake/msvc.cmake
+           cmake/nrf-apply-patches.cmake
+           cmake/nrf-ble-driver.cmake
+           cmake/nrf-download-distfile.cmake
+           cmake/softdevice-file-list.cmake
+           cmake/source-file-list.cmake
+           doc/segger_ob_logic_analyzer.png
+           doc/segger_ob_usb_analyzer.png
+           examples/CMakeLists.txt
+           examples/README.md
+           hex/.gitignore
+           hex/CMakeLists.txt
+           hex/README.md
+           hex/cmake/util.cmake
+           hex/nRF5_SDK_11.0.0_connectivity.patch
+           hex/sd_api_v2/s130_nrf51_2.0.1_license-agreement.txt
+           hex/sd_api_v2/s130_nrf51_2.0.1_softdevice.hex
+           hex/sd_api_v2/s132_nrf52_2.0.1_license-agreement.txt
+           hex/sd_api_v2/s132_nrf52_2.0.1_softdevice.hex
+           hex/sd_api_v3/s132_nrf52_3.1.0_license-agreement.txt
+           hex/sd_api_v3/s132_nrf52_3.1.0_softdevice.hex
+           hex/sd_api_v5/s132_nrf52_5.1.0_softdevice.hex
+           hex/sd_api_v6/s132_nrf52_6.1.1_softdevice.hex
+           hex/sd_api_v6/s140_nrf52_6.1.1_softdevice.hex
+           include/README.md
+           src/sd_api_common/README.md
+           src/sd_api_v2/sdk/components/softdevice/README.md
+           src/sd_api_v3/sdk/components/softdevice/README.md
+           src/sd_api_v5/sdk/components/softdevice/README.md
+           src/sd_api_v6/sdk/components/softdevice/README.md
+           test/CMakeLists.txt
+           test/README.md
+           test/softdevice_api/test.cpp
+           test/util/include/logging.h
+           test/util/include/test_util.h
+           test/util/include/test_util_adapter_wrapper.h
+           test/util/include/test_util_adapter_wrapper_scratchpad.h
+           test/util/include/test_util_conversion.h
+           test/util/include/test_util_role.h
+           test/util/include/virtual_uart.h
+           test/util/src/logging.cpp
+           test/util/src/test_environment.cpp
+           test/util/src/test_util.cpp
+           test/util/src/test_util_adapter_wrapper.cpp
+           test/util/src/test_util_conversion.cpp
+           test/util/src/test_util_role.cpp
+           tools/nrf5x_osx_fix.bin
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     src/sd_api_v3/sdk/components/serialization/application/codecs/common/conn_systemreset_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/app_ble_user_mem.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/app_ble_user_mem.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_event.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_evt_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_evt_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gap_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gap_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gap_evt_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gap_evt_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gattc_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gattc_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gattc_evt_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gattc_evt_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gatts_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gatts_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gatts_evt_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_gatts_evt_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_l2cap_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_l2cap_evt_app.c
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_l2cap_evt_app.h
+           src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/nrf_soc_app.h
+           src/sd_api_v5/sdk/components/serialization/application/codecs/common/conn_systemreset_app.c
+Copyright: 2013-2015 Nordic Semiconductor.
+License:   __UNKNOWN__
+ The information contained herein is property of Nordic Semiconductor ASA.
+ Terms and conditions of usage are described in detail in NORDIC
+ SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+ .
+ Licensees are granted free, non-transferable use of the information. NO
+ WARRANTY of ANY KIND is provided. This heading must NOT be removed from
+ the file.
+
+Files:     include/sd_api_v2/ble.h
+           include/sd_api_v2/ble_err.h
+           include/sd_api_v2/ble_gap.h
+           include/sd_api_v2/ble_gatt.h
+           include/sd_api_v2/ble_gattc.h
+           include/sd_api_v2/ble_gatts.h
+           include/sd_api_v2/ble_hci.h
+           include/sd_api_v2/ble_l2cap.h
+           include/sd_api_v2/ble_ranges.h
+           include/sd_api_v2/ble_types.h
+           include/sd_api_v2/nrf_error.h
+           include/sd_api_v3/ble.h
+           include/sd_api_v3/ble_err.h
+           include/sd_api_v3/ble_gap.h
+           include/sd_api_v3/ble_gatt.h
+           include/sd_api_v3/ble_gattc.h
+           include/sd_api_v3/ble_gatts.h
+           include/sd_api_v3/ble_hci.h
+           include/sd_api_v3/ble_l2cap.h
+           include/sd_api_v3/ble_ranges.h
+           include/sd_api_v3/ble_types.h
+           include/sd_api_v3/nrf_error.h
+Copyright: Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in a processor manufactured by Nordic
+ Semiconductor ASA, or in a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     test/softdevice_api/testcase_advertising.cpp
+           test/softdevice_api/testcase_driver_open_close.cpp
+           test/softdevice_api/testcase_issue_stuck_in_scan_mode.cpp
+           test/softdevice_api/testcase_phy_update.cpp
+           test/softdevice_api/testcase_rssi.cpp
+           test/softdevice_api/testcase_security.cpp
+           test/softdevice_api/testcase_util.cpp
+           test/transport/test_serial_port_enum.cpp
+Copyright: 2018-2019 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Test framework
+
+Files:     include/common/internal/transport/serial_port_enum.h
+           src/common/platform/macos_osx/serial_port_enum.cpp
+           src/common/platform/win/serial_port_enum.cpp
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Portions of this code is from the node-serialport project:
+
+Files:     src/sd_api_v3/ble_gap_impl.cpp
+           src/sd_api_v6/ble_gap_impl.cpp
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ C++ code
+
+Files:     examples/heart_rate_collector/main.c
+           examples/nordic_uart_client/main.c
+Copyright: 2012-2021 nordic semiconductor asa
+License:   __UNKNOWN__
+ redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. redistributions in binary form, except as embedded into a nordic
+ semiconductor asa integrated circuit in a product or a software update for
+ such product, must reproduce the above copyright notice, this list of
+ conditions and the following disclaimer in the documentation and/or other
+ materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of its
+ contributors may be used to endorse or promote products derived from this
+ software without specific prior written permission.
+ .
+ 4. This software, with or without modification, must only be used with a
+ Nordic Semiconductor ASA integrated circuit.
+ .
+ 5. Any software provided in binary form under this license must not be reverse
+ engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL NORDIC SEMICONDUCTOR ASA OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     include/common/sd_rpc.h
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __HEADER___
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ @brief Type definitions and API calls for SoftDevice RPC module.
+
+Files:     src/common/platform/win/enumser.h
+Copyright: 1998-2013 PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+           2016 Nordic Semiconductor ASA
+           / Usage Details:
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Module : enumser.h
+ Purpose: Defines the interface for a class to enumerate the serial ports installed on a PC
+ using a number of different approaches
+ Created: PJN / 03-11-1998
+ .
+ You are allowed to include the source code in any product (commercial, shareware, freeware or
+ otherwise) when your product is released in binary form. You are allowed to modify the source code
+ in any way you want except you cannot modify the copyright details at the top of each module. If you
+ want to distribute source code with your application, then you are only allowed to distribute
+ versions released by the author. This is to maintain a single distribution point for the source
+ code.
+ .
+ Macros / Structs etc ////////////////////////////////
+
+Files:     src/sd_api_v3/sdk/components/serialization/application/codecs/s132/serializers/ble_l2cap_app.h
+Copyright: 2014 Nordic Semiconductor.
+License:   __UNKNOWN__
+ The information contained herein is confidential property of Nordic Semiconductor. The use,
+ copying, transfer or disclosure of such information is prohibited except by express written
+ agreement with Nordic Semiconductor.
+
+Files:     src/common/platform/win/AutoHModule.h
+Copyright: 2013 PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+           2016 Nordic Semiconductor ASA
+           / Usage Details:
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Module : AutoHModule.h
+ Purpose: Defines the interface for a class which supports auto closing of a HMODULE via FreeLibrary and
+ setting of the last Win32 error via SetLastError
+ Created: PJN / 10-01-2013
+ .
+ You are allowed to include the source code in any product (commercial, shareware, freeware or otherwise)
+ when your product is released in binary form. You are allowed to modify the source code in any way you want
+ except you cannot modify the copyright details at the top of each module. If you want to distribute source
+ code with your application, then you are only allowed to distribute versions released by the author. This is
+ to maintain a single distribution point for the source code.
+ .
+ Macros / Structs etc ////////////////////////////////
+
+Files:     src/common/platform/win/AutoHeapAlloc.h
+Copyright: 2013 PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+           2016 Nordic Semiconductor ASA
+           / Usage Details:
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Module : AutoHeapAlloc.h
+ Purpose: Defines the interface for a class which supports auto closing of a heap pointer allocated via HeapAlloc
+ Created: PJN / 10-01-2013
+ .
+ You are allowed to include the source code in any product (commercial, shareware, freeware or otherwise)
+ when your product is released in binary form. You are allowed to modify the source code in any way you want
+ except you cannot modify the copyright details at the top of each module. If you want to distribute source
+ code with your application, then you are only allowed to distribute versions released by the author. This is
+ to maintain a single distribution point for the source code.
+ .
+ Macros / Structs etc ////////////////////////////////
+
+Files:     src/common/platform/win/disphelper.h
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ This file is part of the source code for the DispHelper COM helper library.
+ DispHelper allows you to call COM objects with an extremely simple printf style syntax.
+ DispHelper can be used from C++ or even plain C. It works with most Windows compilers
+ including Dev-CPP, Visual C++ and LCC-WIN32. Including DispHelper in your project
+ couldn't be simpler as it is available in a compacted single file version.
+ .
+ Included with DispHelper are over 20 samples that demonstrate using COM objects
+ including ADO, CDO, Outlook, Eudora, Excel, Word, Internet Explorer, MSHTML,
+ PocketSoap, Word Perfect, MS Agent, SAPI, MSXML, WIA, dexplorer and WMI.
+ .
+ DispHelper is free open source software provided under the BSD license.
+ .
+ Find out more and download DispHelper at:
+ http://sourceforge.net/projects/disphelper/
+ http://disphelper.sourceforge.net/
+
+Files:     src/common/transport/h5_transport.cpp
+Copyright: 2016-2019 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Three Wire Packet types (From BLUETOOTH SPECIFICATION V4.2 [Vol 4, Part D], 8.X
+ .
+ |Type  | Name            | Byte pattern
+
+Files:     src/common/platform/win/AutoHandle.h
+Copyright: 2013 PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+           2016 Nordic Semiconductor ASA
+           / Usage Details:
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Module : AutoHandle.h
+ Purpose: Defines the interface for a class which supports auto closing of a handle via CloseHandle
+ Created: PJN / 10-01-2013
+ .
+ You are allowed to include the source code in any product (commercial, shareware, freeware or otherwise)
+ when your product is released in binary form. You are allowed to modify the source code in any way you want
+ except you cannot modify the copyright details at the top of each module. If you want to distribute source
+ code with your application, then you are only allowed to distribute versions released by the author. This is
+ to maintain a single distribution point for the source code.
+ .
+ Macros / Structs etc ////////////////////////////////
+
+Files:     src/sd_api_common/sdk/components/libraries/util/nordic_common.h
+Copyright: 2008-2017 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form, except as embedded into a Nordic
+ Semiconductor ASA integrated circuit in a product or a software update for
+ such product, must reproduce the above copyright notice, this list of
+ conditions and the following disclaimer in the documentation and/or other
+ materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of its
+ contributors may be used to endorse or promote products derived from this
+ software without specific prior written permission.
+ .
+ 4. This software, with or without modification, must only be used with a
+ Nordic Semiconductor ASA integrated circuit.
+ .
+ 5. Any software provided in binary form under this license must not be reverse
+ engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL NORDIC SEMICONDUCTOR ASA OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ @brief Common defines and macros for firmware developed by Nordic Semiconductor.
+
+Files:     src/common/platform/win/enumser.cpp
+Copyright: 1998-2013 PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+           2016 Nordic Semiconductor ASA
+           / Usage Details:
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Module : enumser.cpp
+ Purpose: Implementation for a class to enumerate the serial ports installed on a PC using a number
+ of different approaches.
+ .
+ You are allowed to include the source code in any product (commercial, shareware, freeware or otherwise)
+ when your product is released in binary form. You are allowed to modify the source code in any way you want
+ except you cannot modify the copyright details at the top of each module. If you want to distribute source
+ code with your application, then you are only allowed to distribute versions released by the author. This is
+ to maintain a single distribution point for the source code.
+ .
+ Includes  //////////////////////////////////
+
+Files:     src/common/platform/win/disphelper.c
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ This file is the compacted single file version of the DispHelper COM helper library.
+ DispHelper allows you to call COM objects with an extremely simple printf style syntax.
+ DispHelper can be used from C++ or even plain C. It works with most Windows compilers
+ including Dev-CPP, Visual C++ and LCC-WIN32. Including DispHelper in your project
+ couldn't be simpler as it is available in a compacted single file version (this file).
+ .
+ Included with DispHelper are over 20 samples that demonstrate using COM objects
+ including ADO, CDO, Outlook, Eudora, Excel, Word, Internet Explorer, MSHTML,
+ PocketSoap, Word Perfect, MS Agent, SAPI, MSXML, WIA, dexplorer and WMI.
+ .
+ DispHelper is free open source software provided under the BSD license.
+ .
+ Find out more, browse the readable version of the source code
+ and download DispHelper at:
+ http://sourceforge.net/projects/disphelper/
+ http://disphelper.sourceforge.net/
+ .
+ To use DispHelper in your project, include this file(disphelper.c) and the
+ header (disphelper.h). For Visual C++, Borland C++ and LCC-Win32 import
+ libraries are included via pragma directives. For other compilers you may
+ need to add ole32, oleaut32 and uuid. To do this in Dev-CPP add
+ "-lole32 -loleaut32 -luuid" to the linker box under Project->Project Options->Parameters.
+ .
+ If you are using Dev-CPP and get errors when compiling this file:
+ Make sure this file is set to compile as C and not C++ under
+ Project->Project Options->Files.
+
+Files:     src/sd_api_v2/sdk/components/libraries/util/nordic_common.h
+Copyright: 2016 Nordic Semiconductor ASA
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ 3. Neither the name of Nordic Semiconductor ASA nor the names of other
+ contributors to this software may be used to endorse or promote products
+ derived from this software without specific prior written permission.
+ .
+ 4. This software must only be used in or with a processor manufactured by Nordic
+ Semiconductor ASA, or in or with a processor manufactured by a third party that
+ is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+ 5. Any software provided in binary or object form under this license must not be
+ reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ @brief Common defines and macros for firmware developed by Nordic Semiconductor.
+
+#----------------------------------------------------------------------------
+# huge files   (skipped):
+#         hex/nRF5_SDK_15.3.0_connectivity.patch
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ .
+ Copyright (c) 2016-2018 Nordic Semiconductor ASA
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+   1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ .
+   2. Redistributions in binary form must reproduce the above copyright notice, this
+   list of conditions and the following disclaimer in the documentation and/or
+   other materials provided with the distribution.
+ .
+   3. Neither the name of Nordic Semiconductor ASA nor the names of other
+   contributors to this software may be used to endorse or promote products
+   derived from this software without specific prior written permission.
+ .
+   4. This software must only be used in or with a processor manufactured by Nordic
+   Semiconductor ASA, or in or with a processor manufactured by a third party that
+   is used in combination with a processor manufactured by Nordic Semiconductor.
+ .
+   5. Any software provided in binary or object form under this license must not be
+   reverse engineered, decompiled, modified and/or disassembled.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
