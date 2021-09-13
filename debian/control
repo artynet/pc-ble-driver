@@ -8,7 +8,7 @@ Build-Depends:
 	catch2, 
 	libfmt-dev, 
 	libasio-dev,
-	spdlog,
+	libspdlog-dev,
 	clang-tidy,
 	python3-scikit-build
 Standards-Version: 4.1.4
